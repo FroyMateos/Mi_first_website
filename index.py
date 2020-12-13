@@ -14,8 +14,12 @@ def proyectos():
 def contacto():
     return render_template('contacto.html')
 
+@app.route('/web')
+def web():
+    return render_template('web.html')
+
 if __name__=='__main__':
     app.run(debug=True) #Para modo prueba (no sera necesario cerrar el programa)
 
-    #pip freze para lo requirements
+    #pip freze para los requirements
     #runtime es tipo de python

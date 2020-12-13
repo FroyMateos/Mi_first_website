@@ -1,4 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,900&display=swap');
+*{
+margin: 0px;
+padding: 0px;
+font-family: Arial, Helvetica, sans-serif;
+text-style: none;
+list-style: none;
+box-sizing: border-box;
+}
+nav{
+background: #060606;
+height: 84px;
+width: 100%;
+}
+.logo{
+padding: 0 30px;
+font-weight: bold;
+cursor: pointer;
+background: #060606;
+}
+nav ul{
+float: right;
+margin-right: 80px;
+}
+nav ul li{
+display: inline-block;
+line-height: 80px;
+margin: 0 20px;
+}
+nav ul li a{
+color: white;
+font-size: 30px;
+font-family: "Barlow Condensed", sans-serif;
+text-transform: uppercase;
+text-decoration: none;
+}
+.nave li a{
+transition: all 0.3s ease 0s;
+}
+.nave li a:hover{
+color: #0088a9;
+}
+a.acti, a:hover{
+background: #060606;
+transition: 0.3s;
+}
+.checkbtn{
+font-size: 40px;
+color: white;
+float: right;
+line-height: 75px;
+margin-right: 30px;
+cursor: pointer;
+display: none;
+}
+#check{
+display: none;
+}
+@media (max-width: 952px){
+.logo{
+font-size: 30px;
+padding-left: 30px;
+}
+nav ul li a{
+font-size: 30px;
+}
+}
+@media (max-width: 958px){
+.checkbtn{
+display: block;
+}
+ul{
+position: fixed;
+width: 100%;
+height: 100vh;
+background: #060606;
+top: 80px;
+left: -100%;
+text-align: center;
+transition: all .5s;
+}
+nav ul li{
+display: block;
+margin: 50px 0;
+line-height: 50px;
+}
+nav ul li a{
+font.size: 10px;
+}
+a:hover, a.acti{
+background: #none;
+color: #0088a9;
+}
+#check:checked ~ ul{
+left: 0;
+}
+}
+.clearfix
+{
+clear: both;
+}
 body{
+  background-color: #444;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
 }
-head{
+.blog-posts{
+  width: min(1200px, 100%);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  cursor: pointer;
 }
+.post{
+  width: calc(33% - 10px);
+  overflow: hidden;
+}
+.post-img{
+  width: 100%;
+  border-radius: 6px;
+  transition: .3s linear;
+}
+.post-content{
+  background-color: #ffffffdd;
+  margin: 0 20px;
+  padding: 30px;
+  border-radius: 6px;
+  transform: translateY(-60px);
+  transition: .3s linear;
+}
+.post-content h3{
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.date{
+  font-size: 15px;
+  font-style: italic;
+  color: #0088a9;
+}
+.post:hover .post-img{
+  transform: translateY(20px);
+}
+.post:hover .post-content{
+  transform: translateY(-80px);
+}
+@media screen and (max-width: 1200px){
+  .blog-posts{
+    justify-content: center;
+  }
+  .post{
+    width: min(600px, 100%);
+  }
+}
+
+
