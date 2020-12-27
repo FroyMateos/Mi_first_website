@@ -1,12 +1,35 @@
 {% extends "layout.html" %}
 
 {% block content %}
-<div class="jumbotron">
-	<h1 class="display-4">Contacto</h1>
-	<p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to
-		featured content or information.</p>
-	<hr class="my-4">
-	<p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-	<a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+
+
+<div class="contact">
+	<article>
+		<header>
+			<h1>Contacto</h1>
+		</header>
+
+
+		<p>Con la finalidad de comprender HTML y CSS, se opto por desarrollar la pagina web en la cual se encuentra
+			navegando usted. El principal enfoque de esta pagina web es ser utilizada como un portafolio de evidencia de
+			los trabajos mas relevantes desarrollados.
+			Para el desarrollo de esta pagina fue utilizado el micro framework Flask (con el lenguaje Python) por tener
+			las herramientas necesarias para crear una aplicación funcional y también tener muchas exenciones para dotar
+			de mas funcionalidades a Flask.
+			Para poder subir la pagina web a la nube se eligió el servicio de Heroku ya que esta a diferencia de otras
+			plataformas permite desarrollar prácticamente con cualquier lenguaje de programación: Ruby, Java, PHP,
+			NodeJS, Python. Al igual que cuenta con un servicio gratuito el cual podemos acceder a las prestaciones
+			básicas.</p>
+	</article>
+
+
+	<form id="form" class="topBefore">
+
+		<input id="name" type="text" placeholder="NOMBRE">
+		<input id="email" type="text" placeholder="E-MAIL">
+		<textarea id="message" type="text" placeholder="MENSAJE"></textarea>
+		<input id="submit" type="submit" value="ENVIAR">
+
+	</form>
 </div>
 {% endblock %}

@@ -7,13 +7,10 @@
     <title>Portafolio Web</title>
     <link rel="stylesheet" href="static/css/main.css">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-
-
-<div id="container">
-
     <header>
         <nav>
             <input type="checkbox" id="check">
@@ -24,50 +21,70 @@
                 <img class="logo" src="static/css/logo.png" alt="logo">
             </a>
             <ul class="nave">
-                <li><a class="acti" href="/">Home</a></li>
+                <li><a class="acti" href="/">Inicio</a></li>
                 <li><a href="/proyectos">Proyectos</a></li>
                 <li><a href="/contacto">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
-    <section id="content1">
-        {% block content %}
-        {% endblock %}
-    </section>
-
+    {% block content %}
+    {% endblock %}
+    <div class="title-blog">
+        <h1>Proyectos relevantes</h1>
+    </div>
     <div class="blog-posts">
         <div class="post">
-            <img src="static/css/1.jpg" alt="" class="post-img">
+            <a href="/proyectos">
+                <img src="static/css/1.png" alt="" class="post-img">
+            </a>
             <div class="post-content">
-                <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, soluta?</h3>
-                <span class="date">July 13, 2020</span>
+                <h3>Residencias en la armada de México donde se desarrolló un transmisor FM con comunicación de
+                    datos
+                    RDS. Con la intención de obtener información requerida y que cualquier dispositivo con radio
+                    puediera consultarlo.</h3>
+                <span class="date">30 de junio del 2020</span>
             </div>
         </div>
 
         <div class="post">
-            <img src="static/css/2.jpg" alt="" class="post-img">
+            <a href="/proyectos">
+                <img src="static/css/2.jpeg" alt="" class="post-img">
+            </a>
             <div class="post-content">
-                <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, soluta?</h3>
-                <span class="date">July 13, 2020</span>
+                <h3>Servicio Social en el laboratorio CIM (Computer Integrated Manufacturing). Mantenimiento y
+                    operación
+                    de la línea de producción, y accesorias a los estudiantes de la licenciatura en Ingeniería
+                    Industrial
+                    para proyectos relacionados con su carrera.</h3>
+                <span class="date">26 de febrero del 2020</span>
             </div>
         </div>
 
         <div class="post">
-            <img src="static/css/3.jpg" alt="" class="post-img">
+            <a href="/proyectos">
+                <img src="static/css/3.png" alt="" class="post-img">
+            </a>
             <div class="post-content">
-                <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, soluta?</h3>
-                <span class="date">July 13, 2020</span>
+                <h3>Para comprender las bases de datos se desarrollo un sector de contacto en la
+                    pagina web en Python, en la que se puede poner nombre, e-mail y comentar. Y actualizar la base
+                    de datos en SQLite</h3>
+                <span class="date">18 de diciembre del 2020</span>
             </div>
         </div>
     </div>
 
+
     <footer>
+       <a class="boton" href="#">Volver al inicio</a>
+        <div class="social">
         Froylán Mateos Sánchez &copy; 2020-2021
+            <a href="/contacto" class="fa fa-phone"></a>
+            <a href="/contacto" class="fa fa-google"></a>
+            <a href="/contacto" class="fa fa-facebook"></a>
+        </div>
     </footer>
 
-</div>
 
 </body>
-
 </html>

@@ -13,7 +13,7 @@ height: 84px;
 width: 100%;
 }
 .logo{
-padding: 0 30px;
+padding: 0 10px;
 font-weight: bold;
 cursor: pointer;
 background: #060606;
@@ -59,7 +59,7 @@ display: none;
 @media (max-width: 952px){
 .logo{
 font-size: 30px;
-padding-left: 30px;
+padding-left: 10px;
 }
 nav ul li a{
 font-size: 30px;
@@ -100,58 +100,337 @@ left: 0;
 clear: both;
 }
 body{
-  background-color: #444;
-  min-height: 100vh;
-  align-items: center;
-  justify-content: center;
+background-color: #2C5364;
+min-height: 100vh;
+align-items: center;
+justify-content: center;
+}
+h1{
+color:white;
+line-height:30px;
+letter-spacing:5px;
+text-align:left;
+
 }
 .blog-posts{
-  width: min(1200px, 100%);
-  padding: 20px;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  cursor: pointer;
+display:inline-block
+width: min(1200px, 100%);
+padding: 20px;
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+cursor: pointer;
 }
 .post{
-  width: calc(33% - 10px);
-  overflow: hidden;
+width: calc(33% - 10px);
+overflow: hidden;
 }
 .post-img{
-  width: 100%;
-  border-radius: 6px;
-  transition: .3s linear;
+width: 100%;
+border-radius: 6px;
+transition: .3s linear;
 }
 .post-content{
-  background-color: #ffffffdd;
-  margin: 0 20px;
-  padding: 30px;
-  border-radius: 6px;
-  transform: translateY(-60px);
-  transition: .3s linear;
+display: inline-block;
+background-color: #ffffffdd;
+margin: 0 20px;
+padding: 30px;
+border-radius: 6px;
+transform: translateY(-60px);
+transition: .3s linear;
+text-align:justify;
 }
 .post-content h3{
-  font-size: 16px;
-  margin-bottom: 10px;
+font-size: 16px;
+margin-bottom: 10px;
 }
 .date{
-  font-size: 15px;
-  font-style: italic;
-  color: #0088a9;
+font-size: 15px;
+font-style: italic;
+color: #0088a9;
 }
 .post:hover .post-img{
-  transform: translateY(20px);
+transform: translateY(20px);
 }
 .post:hover .post-content{
-  transform: translateY(-80px);
+transform: translateY(-80px);
 }
-@media screen and (max-width: 1200px){
-  .blog-posts{
-    justify-content: center;
-  }
-  .post{
-    width: min(600px, 100%);
-  }
+@media screen and (max-width: 958px){
+.blog-posts{
+justify-content: center;
+}
+.post{
+width: min(600px, 100%);
+}
+}
+/*Web project*/
+.web{
+color:white;
+font-size:20px;
+line-height:30px;
+letter-spacing:5px;
+text-align:justify;
+margin: 20px;
+margin-bottom: 10vh;
+}
+.web header{
+height: 10vh;
+}
+/*Title blog*/
+.title-blog h1{
+margin: 20px;
+padding: 30px;
+border-radius: 6px;
+font-family: "Barlow Condensed", sans-serif;
+text-transform: uppercase;
+text-align:center;
+background: #060606
 }
 
+/*Contact text*/
+.contact {
+color:white;
+font-size:20px;
+line-height:30px;
+letter-spacing:5px;
+text-align:justify;
+margin: 20px;
+margin-bottom: 10vh;
+}
+.contact h1{
+height: 5vh;
+}
 
+/*Contact box*/
+#form {
+  position: relative;
+  width: 500px;
+  margin: 50px auto 100px auto;
+}
+.contact input {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.875em;
+  width: 470px;
+  height: 50px;
+  padding: 0px 15px 0px 15px;
+  background: transparent;
+  outline: none;
+  color: #726659;
+  border: solid 1px #b3aca7;
+  border-bottom: none;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+}
+
+.contact input:hover {
+  background: #b3aca7;
+  color: #e2dedb;
+}
+
+.contact textarea {
+  width: 470px;
+  max-width: 470px;
+  height: 110px;
+  max-height: 110px;
+  padding: 15px;
+
+  background: transparent;
+  outline: none;
+
+  color: #726659;
+  font-family: 'Lato', sans-serif;
+  font-size: 0.875em;
+
+  border: solid 1px #b3aca7;
+
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+}
+
+.contact  textarea:hover {
+  background: #b3aca7;
+  color: #e2dedb;
+}
+
+#submit {
+  width: 502px;
+
+  padding: 0;
+  margin: -5px 0px 0px 0px;
+
+  font-family: 'Lato', sans-serif;
+  font-size: 0.875em;
+  color: #b3aca7;
+
+  outline:none;
+  cursor: pointer;
+
+  border: solid 1px #b3aca7;
+  border-top: none;
+}
+
+#submit:hover {
+  color: #e2dedb;
+}
+/*html, body {
+margin: 0;
+height: 100%;
+overflow: hidden;
+}*/
+
+/*Footer*/
+footer{
+padding: 10px;
+background: #060606;
+}
+.social{
+color:white;
+font-size: 20px;
+padding: 3px;
+font-family: "Barlow Condensed", sans-serif;
+text-transform: uppercase;
+background: #060606;
+}
+.social .fa{
+  color:white;
+  font-size: 30px;
+  width: 50px;
+  float: right;
+  text-decoration: none;
+  padding-top: 0;
+  line-height: 2px;
+}
+.fa-facebook:hover{
+  opacity: 0.7;
+  color: #0088a9;
+}
+ .fa-phone:hover{
+  opacity: 0.7;
+  color: #0088a9;
+}
+.fa-google:hover{
+  opacity: 0.7;
+  color: #0088a9;
+}
+.boton{
+    font-family: "Barlow Condensed", sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 3px;
+    font-size: 20px;
+    color: #ffffff;
+  }
+  .boton:hover{
+  color: #0088a9;
+}
+
+/*Projects section*/
+.projects header{
+height: 10vh;
+color:white;
+font-size:20px;
+line-height:30px;
+letter-spacing:5px;
+text-align:justify;
+margin: 20px;
+}
+.dino-card {
+  background-color: #ffffffdd;
+  margin: 30px 10px;
+  padding: 20px;
+  border-radius: 4px;
+}
+.dino-avatar {
+  max-width: 160px;
+  height: 160px;
+  border-radius: 100%;
+  overflow: hidden;
+  background-color: #2C5364;
+  margin-right: 40px;
+}
+.dino-name {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+.dino-button{
+    background-color: black;
+    border-radius: 10px;
+    font-family: "Barlow Condensed", sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 3px;
+    font-size: 20px;
+    color: #ffffff;
+  }
+  .dino-button:hover{
+  color: #0088a9;
+}
+
+.dino-card-footer {
+  border-top: 2px solid #004e66;
+  margin-top: 20px;
+  padding-top: 20px;
+}
+
+.food-item {
+  display: inline-block;
+  margin-right: 15px;
+  color: #D81159;
+}
+
+/* ---- Flexbox ---- */
+.valley-content {
+  flex-direction: column;
+  flex: 1;
+}
+
+.dino-card {
+  display: flex;
+}
+
+.dino-avatar {
+  flex: 1;
+}
+
+.dino-info {
+  flex: 2;
+}
+
+.dino-button {
+  margin-top: auto;
+  align-self: flex-start;
+}
+
+.dino-card-footer {
+  justify-content: space-in-between;
+}
+
+.dino-card-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.dino-button {
+  margin-left: auto;
+}
+
+/* =================================
+  Media Queries
+==================================== */
+
+@media (min-width: 769px) {
+
+  .dino-card {
+    margin-bottom: 20px;
+  }
+
+}
+
+@media (min-width: 1025px) {
+
+}
