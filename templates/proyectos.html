@@ -2,83 +2,161 @@
 
 {% block content %}
 
-<div class="projects">
-<header>
-	<h1>Proyectos</h1>
-	<p>Desarrollados por
-		<time>Froylán Mateos Sánchez</time>
-	</p>
-</header>
 
-<div class="valley-content">
-	<div class="dino-card">
-		<div class="dino-avatar"><img src=""></div>
-		<div class="dino-info">
-			<h2>Abrictosaurus</h2>
-			<p>Abrictosaurus was a small dinosaur that lived in the early Jurassic period, between about 199 and 196
-				million years ago. Abrictosaurus was quite small. It was about 1.2 meters long, and weighed only 45
-				kilograms.
+<script>
+function vermas(id){
+if(id=="mas"){
+document.getElementById("desplegar").style.display="block";
+document.getElementById("mas").style.display="none";
+}
+else{
+document.getElementById("desplegar").style.display="none";
+document.getElementById("mas").style.display="inline";
+}
+}
+</script>
 
-			<div class="dino-card-footer">
-				<ul class="foods-list">
-					<li class="food-item">Carrion</li>
-					<li class="food-item">Plants</li>
+<div class="banner">
+	<div class="heading">
+		<h1>Proyectos</h1>
+		<time></time>
+		<div class="small-spinner"></div>
+	</div>
+</div>
+
+	<div class="content">
+	<div class="card">
+		<div class="card-image"><img src=""></div>
+		<div class="card-info">
+			<h2 class="card-name">Transmisor receptor FM con comunicación RDS.</h2>
+
+			<p>Desarrollar e implementar en unas sonoboyas un transmisor receptor
+				para que proporcione datos de su entorno pero que mediante ondas
+				FM transmitirá la comunicación mediante datos RDS.
+				<br>
+				La falta de éste es un problema actual debido a que al desplegar
+				en el mar no se sabe con exactitud su ubicación, estado climático
+				e incluso el estado de la batería de toda la sonoboya en general.
+				<a onclick="vermas('mas');" id="mas">leer más</a></p>
+			<p id="desplegar" style="display:none;">
+				Regresó la zorra y más le dolió el no poder vengarse, que saber de la
+				muerte de sus pequeños; ¿Cómo podría ella, siendo un animal terrestre,
+				sin poder volar, perseguir a uno que vuela? Tuvo que conformarse con
+				el usual consuelo de los débiles e impotentes: maldecir desde lejos
+				a su enemigo.
+				<a onclick="vermas('menos');" id="menos">leer menos</a>
+			</p>
+
+			<div class="card-footer">
+				<ul class="card-list">
+					<li class="card-item">Mecatronica</li>
+					<li class="card-item">Electronica</li>
 				</ul>
-				<a class="dino-button" href="#">Learn More</a>
 			</div>
 		</div>
 	</div><!--/.dino-card-->
 
-	<div class="dino-card">
-		<div class="dino-avatar"><img src=""></div>
-		<div class="dino-info">
-			<h2>Diplodocus</h2>
-			<p>Diplodocus lived in the Jurassic period, 155 to 145 million years ago. Diplodocus was usually around 25.9
-				meters long, although some specimens were as long as 30.5 meters. Most of its length was taken up its
-				7.3 meters neck, and its 14 meters tail. Its body was only about 4 meters long, and its head was
-				comparatively tiny, just 60 centimeters long.</p>
 
-			<div class="dino-card-footer">
-				<ul class="foods-list">
-					<li class="food-item">Plants</li>
-				</ul>
-				<a class="dino-button" href="#">Learn More</a>
-			</div>
-		</div>
-	</div><!--/.dino-card-->
 
-	<div class="dino-card">
-		<div class="dino-avatar"><img src=""></div>
-		<div class="dino-info">
-			<h2 class="dino-name">Tyrannosaurus</h2>
-			<p>Tyrannosaurus rex lived during late Cretaceous period, about 67 to 65 million years ago. It was one of
-				the last dinosaurs, and probably went extinct during the Cretaceous-Tertiary mass extinction. It turns
-				out that the undisputed king of the dinosaurs, Tyrannosaurus rex, didn't just eat other dinosaurs but
-				also each other.</p>
+   <div class="card">
+      <div class="card-image"><img src=""></div>
+      <div class="card-info">
+         <h2 class="card-name">Transmisor receptor FM con comunicación RDS.</h2>
 
-			<div class="dino-card-footer">
-				<ul class="foods-list">
-					<li class="food-item">Prey</li>
-				</ul>
-				<a class="dino-button" href="#">Learn More</a>
-			</div>
-		</div>
-	</div><!--/.dino-card-->
+         <p>Desarrollar e implementar en unas sonoboyas un transmisor receptor
+            para que proporcione datos de su entorno pero que mediante ondas
+            FM transmitirá la comunicación mediante datos RDS.
+            <br>
+            La falta de éste es un problema actual debido a que al desplegar
+            en el mar no se sabe con exactitud su ubicación, estado climático
+            e incluso el estado de la batería de toda la sonoboya en general.
+            <a onclick="vermas('mas');" id="mas">leer más</a></p>
+         <p id="desplegar" style="display:none;">
+            Regresó la zorra y más le dolió el no poder vengarse, que saber de la
+            muerte de sus pequeños; ¿Cómo podría ella, siendo un animal terrestre,
+            sin poder volar, perseguir a uno que vuela? Tuvo que conformarse con
+            el usual consuelo de los débiles e impotentes: maldecir desde lejos
+            a su enemigo.
+            <a onclick="vermas('menos');" id="menos">leer menos</a>
+         </p>
 
-	<div class="dino-card">
-		<div class="dino-avatar"><img src=""></div>
-		<div class="dino-info">
-			<h2>Triceratops</h2>
-			<p>Triceratops lived in the late Cretaceous period, about 72 to 65 million years ago, Triceratops was one of
-				the dinosaurs that died out in the Cretaceous-Tertiary extinction 65 million years ago.</p>
+         <div class="card-footer">
+            <ul class="card-list">
+               <li class="card-item">Mecatronica</li>
+               <li class="card-item">Electronica</li>
+            </ul>
+         </div>
+      </div>
+   </div><!--/.dino-card-->
 
-			<div class="dino-card-footer">
-				<ul class="foods-list">
-					<li class="food-item">Plants</li>
-				</ul>
-				<a class="dino-button" href="#">Learn More</a>
-			</div>
-		</div>
-	</div><!--/.dino-card-->
+
+
+
+
+   <div class="card">
+      <div class="card-image"><img src=""></div>
+      <div class="card-info">
+         <h2 class="card-name">Transmisor receptor FM con comunicación RDS.</h2>
+
+         <p>Desarrollar e implementar en unas sonoboyas un transmisor receptor
+            para que proporcione datos de su entorno pero que mediante ondas
+            FM transmitirá la comunicación mediante datos RDS.
+            <br>
+            La falta de éste es un problema actual debido a que al desplegar
+            en el mar no se sabe con exactitud su ubicación, estado climático
+            e incluso el estado de la batería de toda la sonoboya en general.
+            <a onclick="vermas('mas');" id="mas">leer más</a></p>
+         <p id="desplegar" style="display:none;">
+            Regresó la zorra y más le dolió el no poder vengarse, que saber de la
+            muerte de sus pequeños; ¿Cómo podría ella, siendo un animal terrestre,
+            sin poder volar, perseguir a uno que vuela? Tuvo que conformarse con
+            el usual consuelo de los débiles e impotentes: maldecir desde lejos
+            a su enemigo.
+            <a onclick="vermas('menos');" id="menos">leer menos</a>
+         </p>
+
+         <div class="card-footer">
+            <ul class="card-list">
+               <li class="card-item">Mecatronica</li>
+               <li class="card-item">Electronica</li>
+            </ul>
+         </div>
+      </div>
+   </div><!--/.dino-card-->
+
+
+
+
+   <div class="card">
+      <div class="card-image"><img src=""></div>
+      <div class="card-info">
+         <h2 class="card-name">Transmisor receptor FM con comunicación RDS.</h2>
+
+         <p>Desarrollar e implementar en unas sonoboyas un transmisor receptor
+            para que proporcione datos de su entorno pero que mediante ondas
+            FM transmitirá la comunicación mediante datos RDS.
+            <br>
+            La falta de éste es un problema actual debido a que al desplegar
+            en el mar no se sabe con exactitud su ubicación, estado climático
+            e incluso el estado de la batería de toda la sonoboya en general.
+            <a onclick="vermas('mas');" id="mas">leer más</a></p>
+         <p id="desplegar" style="display:none;">
+            Regresó la zorra y más le dolió el no poder vengarse, que saber de la
+            muerte de sus pequeños; ¿Cómo podría ella, siendo un animal terrestre,
+            sin poder volar, perseguir a uno que vuela? Tuvo que conformarse con
+            el usual consuelo de los débiles e impotentes: maldecir desde lejos
+            a su enemigo.
+            <a onclick="vermas('menos');" id="menos">leer menos</a>
+         </p>
+
+         <div class="card-footer">
+            <ul class="card-list">
+               <li class="card-item">Mecatronica</li>
+               <li class="card-item">Electronica</li>
+            </ul>
+         </div>
+      </div>
+   </div><!--/.dino-card-->
+
 </div>
 {% endblock %}
