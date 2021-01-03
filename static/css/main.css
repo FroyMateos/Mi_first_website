@@ -1,5 +1,6 @@
 /*layout general*/
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 *{
 margin: 0px;
 padding: 0px;
@@ -8,6 +9,8 @@ text-style: none;
 list-style: none;
 box-sizing: border-box;
 }
+
+
 /*Nav bar*/
 header {
 position: fixed;
@@ -91,10 +94,6 @@ line-height: 50px;
 nav ul li a{
 font.size: 10px;
 }
-a:hover, a.acti{
-background: #none;
-color: #0088a9;
-}
 #check:checked ~ ul{
 left: 0;
 }
@@ -177,9 +176,10 @@ letter-spacing:2px;
 text-align:justify;
 }
 
-
 /*Title blog*/
 .title-blog h1{
+width: 97.8%;
+overflow: hidden;
 color:white;
 margin: 20px;
 padding: 30px;
@@ -189,7 +189,11 @@ text-transform: uppercase;
 text-align:center;
 background: #060606;
 }
-
+@media screen and (max-width: 958px){
+.title-blog{
+width: 98%;
+}
+}
 
 /*Blog texts*/
 .blog-posts{
@@ -290,6 +294,123 @@ color: #ffffff;
 .boton:hover{
 color: #0088a9;
 }
+
+
+/*Home*/
+/*Skill*/
+.skills{
+padding: 50px;
+float: right;
+width: 40%;
+}
+.content-body2{
+float:left;
+width: 60%;
+padding: 66px;
+color:white;
+font-size:20px;
+line-height:30px;
+letter-spacing:2px;
+text-align:justify;
+}
+@media screen and (max-width: 1558px){
+.content-body2{
+width: 100%;
+}
+.skills{
+width: min(900px, 100%);
+display: block;
+}
+
+}
+.info span{
+font-family: "Barlow Condensed", sans-serif;
+text-transform: uppercase;
+color: white;
+font-size: 25px;
+}
+.skill-bars{
+  padding: 25px 30px;
+  height: 100%;
+  place-items: center;
+  width: 600px;
+  background: #060606;
+  border-radius: 10px;
+}
+.skill-bars .bar{
+  margin: 20px 0;
+}
+.skill-bars .bar .progress-line{
+  height: 10px;
+  width: 100%;
+  transform: scaleX(0);
+  transform-origin: left;
+  border-radius: 20px;
+  animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+@keyframes animate {
+  100%{
+    transform: scaleX(1);
+  }
+}
+.bar .progress-line span{
+  height: 150%;
+  position: absolute;
+  border-radius: 20px;
+  transform: scaleX(0);
+  transform-origin: left;
+  background: white;
+  animation: animate cubic-bezier(1,0,0.5,1) forwards;
+}
+.bar .progress-line.html span{
+  width: 90%;
+}
+.bar .progress-line.css span{
+  width: 60%;
+}
+.bar .progress-line.jquery span{
+  width: 85%;
+}
+.bar .progress-line.python span{
+  width: 50%;
+}
+.bar .progress-line.mysql span{
+  width: 75%;
+}
+.progress-line span::after{
+  position: absolute;
+  top: -28px;
+  right: 0;
+  background: #2C5364;
+  color: #fff;
+  padding: 1px 10px;
+  font-size: 15px;
+  border-radius: 3px;
+  opacity: 0;
+  animation: showText2 0.5s 1.5s linear forwards;
+}
+@keyframes showText2 {
+  100%{
+    opacity: 1;
+  }
+}
+.progress-line.html span::after{
+  content: "90%";
+}
+.progress-line.css span::after{
+  content: "60%";
+}
+.progress-line.jquery span::after{
+  content: "85%";
+}
+.progress-line.python span::after{
+  content: "50%";
+}
+.progress-line.mysql span::after{
+  content: "75%";
+}
+
+
 /*Contact*/
 /*Contact text*/
 .contact {
@@ -380,7 +501,6 @@ height: 5vh;
 
 
 /*Projects section*/
-
 .card {
   background-color: #ffffffdd;
   margin: 30px 10px;
@@ -391,7 +511,7 @@ height: 5vh;
 .card-image {
   max-width: 160px;
   height: 160px;
-  border-radius: 100%;
+  border-radius: 10%;
   overflow: hidden;
   background-color: #2C5364;
   margin-right: 40px;
@@ -401,7 +521,7 @@ height: 5vh;
   margin-bottom: 0;
 }
 .card-footer {
-  border-top: 2px solid #004e66;
+  border-top: 2px solid black;
   margin-top: 20px;
   padding-top: 20px;
 }
@@ -423,10 +543,10 @@ a{
 text-decoration: none;
 padding: 3px;
 font-size: 20px;
-color: blue;
+color: black;
 cursor: pointer;
 font-weight: bold;
-text-decoration: underline blue;
+text-decoration: underline black;
 }
 .card {
   display: flex;

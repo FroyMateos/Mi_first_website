@@ -14,43 +14,64 @@ document.getElementById("desplegar").style.display="none";
 document.getElementById("mas").style.display="inline";
 }
 }
+
+function vermas1(id){
+if(id=="mas1"){
+document.getElementById("desplegar1").style.display="block";
+document.getElementById("mas1").style.display="none";
+}
+else{
+document.getElementById("desplegar1").style.display="none";
+document.getElementById("mas1").style.display="inline";
+}
+}
+
+
 </script>
 
 <div class="banner">
 	<div class="heading">
 		<h1>Proyectos</h1>
-		<time></time>
+		<time>Por Froylán Mateos Sánchez</time>
 		<div class="small-spinner"></div>
 	</div>
 </div>
 
 	<div class="content">
 	<div class="card">
-		<div class="card-image"><img src=""></div>
+		<div class="card-image"><img src="static/css/siviso.png"></div>
 		<div class="card-info">
-			<h2 class="card-name">Transmisor receptor FM con comunicación RDS.</h2>
+			<h2 class="card-name">Transmisor FM con comunicación RDS.</h2>
 
-			<p>Desarrollar e implementar en unas sonoboyas un transmisor receptor
-				para que proporcione datos de su entorno pero que mediante ondas
-				FM transmitirá la comunicación mediante datos RDS.
-				<br>
-				La falta de éste es un problema actual debido a que al desplegar
-				en el mar no se sabe con exactitud su ubicación, estado climático
-				e incluso el estado de la batería de toda la sonoboya en general.
-				<a onclick="vermas('mas');" id="mas">leer más</a></p>
+			<p>Desarrollar e implementar a una sonoboya  (combinación de sonar y boya)
+				un transmisor para que proporcione datos de su entorno y que mediante
+				ondas FM transmitirá esa información mediante RDS.
+				 <br>
+				<a onclick="vermas('mas');" id="mas">Leer más...</a></p>
 			<p id="desplegar" style="display:none;">
-				Regresó la zorra y más le dolió el no poder vengarse, que saber de la
-				muerte de sus pequeños; ¿Cómo podría ella, siendo un animal terrestre,
-				sin poder volar, perseguir a uno que vuela? Tuvo que conformarse con
-				el usual consuelo de los débiles e impotentes: maldecir desde lejos
-				a su enemigo.
-				<a onclick="vermas('menos');" id="menos">leer menos</a>
-			</p>
+				La problematica era que al desplegar la sonoboya
+				en el mar no se sabia con exactitud su ubicación, estado climático
+				o el estado de la batería.
+				<br>
+				<br>
+				Trabajos desarrollados
+				<br>
+				-Investigación de cada módulo que se implementa en el transmisor.<br>
+				-Desarrollar la programación.<br>
+				-Desarrollar las pruebas de los módulos y observar su implementación.<br>
+				-Desarrollar la simulación del ensamblaje del componente.<br>
+				-Diseñar el PCB donde todo los componentes del transmisor irán ensamblados.<br>
+				<a onclick="vermas('menos');" id="menos">Leer menos...</a></p>
+			<br>
+			<a href="static/css/ITVER RESIDENCIA.pdf" download="Residencias">DOCUMENTACIÓN</a>
 
 			<div class="card-footer">
 				<ul class="card-list">
-					<li class="card-item">Mecatronica</li>
-					<li class="card-item">Electronica</li>
+					<li class="card-item">Mecatrónica</li>
+					<li class="card-item">Electrónica</li>
+					<li class="card-item">Programación</li>
+					<li class="card-item">Simulación</li>
+
 				</ul>
 			</div>
 		</div>
@@ -59,104 +80,66 @@ document.getElementById("mas").style.display="inline";
 
 
    <div class="card">
-      <div class="card-image"><img src=""></div>
+      <div class="card-image"><img src="static/css/image1.jpeg"></div>
       <div class="card-info">
-         <h2 class="card-name">Transmisor receptor FM con comunicación RDS.</h2>
+         <h2 class="card-name">Mantenimiento y operación del laboratorio CIM</h2>
 
-         <p>Desarrollar e implementar en unas sonoboyas un transmisor receptor
-            para que proporcione datos de su entorno pero que mediante ondas
-            FM transmitirá la comunicación mediante datos RDS.
-            <br>
-            La falta de éste es un problema actual debido a que al desplegar
-            en el mar no se sabe con exactitud su ubicación, estado climático
-            e incluso el estado de la batería de toda la sonoboya en general.
-            <a onclick="vermas('mas');" id="mas">leer más</a></p>
-         <p id="desplegar" style="display:none;">
-            Regresó la zorra y más le dolió el no poder vengarse, que saber de la
-            muerte de sus pequeños; ¿Cómo podría ella, siendo un animal terrestre,
-            sin poder volar, perseguir a uno que vuela? Tuvo que conformarse con
-            el usual consuelo de los débiles e impotentes: maldecir desde lejos
-            a su enemigo.
-            <a onclick="vermas('menos');" id="menos">leer menos</a>
-         </p>
+	      <p>Mantenimiento y operación de la línea de producción, y accesorias a los estudiantes de la licenciatura
+		      en Ingeniería Industrial para desarrollar proyectos relacionados con su carrera.
+		       <br>
+		      <a onclick="vermas1('mas1');" id="mas1">Leer más...</a></p>
+	      <p id="desplegar1" style="display:none;">
+		      El trabajo estrablecido fue desarrollar una línea de producción de cualquier tipo de producto con la
+		      finalidad de aplicar
+		      la cuarta revolución industrial mejor conocida como “Industria 4.0”.
+		      <br>
+		      <br>
+		      Trabajos desarrollados
+		      <br>
+		      -Investigación de temas relacionados a la carrea de Ingenería Insdustrial<br>
+		      -Mantenimiento preventivo a las distintas estaciones del laboratorio CIM.<br>
+		      -Diseñar las piezas para la implementación del módulo y del producto a desarrollar.<br>
+		      -Desarrollar las piezas para la implementación del módulo.<br>
+		      -Platicas de desmotración.<br>
+		      <a onclick="vermas1('menos1');" id="menos1">Leer menos...</a></p>
+
+
+	      <br>
+			<a href="static/css/ITVER SER. SOC..pdf" download="Servicio Social">DOCUMENTACIÓN</a>
 
          <div class="card-footer">
-            <ul class="card-list">
-               <li class="card-item">Mecatronica</li>
-               <li class="card-item">Electronica</li>
-            </ul>
+	         <ul class="card-list">
+		         <li class="card-item">Mecatrónica</li>
+		         <li class="card-item">Asesorías</li>
+		         <li class="card-item">Ingeneria Industrial</li>
+		         <li class="card-item">Diseño</li>
+	         </ul>
          </div>
       </div>
    </div><!--/.dino-card-->
-
-
-
 
 
    <div class="card">
       <div class="card-image"><img src=""></div>
       <div class="card-info">
-         <h2 class="card-name">Transmisor receptor FM con comunicación RDS.</h2>
+         <h2 class="card-name"></h2>
 
-         <p>Desarrollar e implementar en unas sonoboyas un transmisor receptor
-            para que proporcione datos de su entorno pero que mediante ondas
-            FM transmitirá la comunicación mediante datos RDS.
-            <br>
-            La falta de éste es un problema actual debido a que al desplegar
-            en el mar no se sabe con exactitud su ubicación, estado climático
-            e incluso el estado de la batería de toda la sonoboya en general.
-            <a onclick="vermas('mas');" id="mas">leer más</a></p>
+         <p>
+            <a onclick="vermas('mas');" id="mas">Leer más...</a></p>
          <p id="desplegar" style="display:none;">
-            Regresó la zorra y más le dolió el no poder vengarse, que saber de la
-            muerte de sus pequeños; ¿Cómo podría ella, siendo un animal terrestre,
-            sin poder volar, perseguir a uno que vuela? Tuvo que conformarse con
-            el usual consuelo de los débiles e impotentes: maldecir desde lejos
-            a su enemigo.
-            <a onclick="vermas('menos');" id="menos">leer menos</a>
+
+            <a onclick="vermas('menos');" id="menos">Leer menos...</a>
          </p>
 
          <div class="card-footer">
             <ul class="card-list">
-               <li class="card-item">Mecatronica</li>
-               <li class="card-item">Electronica</li>
+               <li class="card-item"></li>
+               <li class="card-item"></li>
             </ul>
          </div>
       </div>
    </div><!--/.dino-card-->
 
-
-
-
-   <div class="card">
-      <div class="card-image"><img src=""></div>
-      <div class="card-info">
-         <h2 class="card-name">Transmisor receptor FM con comunicación RDS.</h2>
-
-         <p>Desarrollar e implementar en unas sonoboyas un transmisor receptor
-            para que proporcione datos de su entorno pero que mediante ondas
-            FM transmitirá la comunicación mediante datos RDS.
-            <br>
-            La falta de éste es un problema actual debido a que al desplegar
-            en el mar no se sabe con exactitud su ubicación, estado climático
-            e incluso el estado de la batería de toda la sonoboya en general.
-            <a onclick="vermas('mas');" id="mas">leer más</a></p>
-         <p id="desplegar" style="display:none;">
-            Regresó la zorra y más le dolió el no poder vengarse, que saber de la
-            muerte de sus pequeños; ¿Cómo podría ella, siendo un animal terrestre,
-            sin poder volar, perseguir a uno que vuela? Tuvo que conformarse con
-            el usual consuelo de los débiles e impotentes: maldecir desde lejos
-            a su enemigo.
-            <a onclick="vermas('menos');" id="menos">leer menos</a>
-         </p>
-
-         <div class="card-footer">
-            <ul class="card-list">
-               <li class="card-item">Mecatronica</li>
-               <li class="card-item">Electronica</li>
-            </ul>
-         </div>
-      </div>
-   </div><!--/.dino-card-->
 
 </div>
 {% endblock %}
