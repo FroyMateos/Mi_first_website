@@ -170,9 +170,8 @@ justify-content: center;
 .content-body{
 padding: 66px;
 color:white;
-font-size:20px;
+font-size:25px;
 line-height:30px;
-letter-spacing:2px;
 text-align:justify;
 }
 
@@ -217,16 +216,18 @@ transition: .3s linear;
 .post-content{
 display: inline-block;
 background-color: #ffffffdd;
-margin: 0 20px;
-padding: 30px;
+margin: 0 30px;
+padding: 20px;
 border-radius: 6px;
 transform: translateY(-60px);
 transition: .3s linear;
-text-align:justify;
 }
 .post-content h3{
 font-size: 16px;
 margin-bottom: 10px;
+}
+.cont-line{
+text-decoration-line: none;
 }
 .date{
 font-size: 15px;
@@ -304,21 +305,21 @@ float: right;
 width: 40%;
 }
 .content-body2{
-float:left;
 width: 60%;
+float: left;
 padding: 66px;
 color:white;
-font-size:20px;
+font-size:25px;
 line-height:30px;
-letter-spacing:2px;
 text-align:justify;
 }
-@media screen and (max-width: 1558px){
+@media screen and (max-width: 1200px){
 .content-body2{
 width: 100%;
 }
 .skills{
-width: min(900px, 100%);
+width: min(1100px, 100%);
+overflow: hidden;
 display: block;
 }
 
@@ -331,9 +332,6 @@ font-size: 25px;
 }
 .skill-bars{
   padding: 25px 30px;
-  height: 100%;
-  place-items: center;
-  width: 600px;
   background: #060606;
   border-radius: 10px;
 }
@@ -342,8 +340,6 @@ font-size: 25px;
 }
 .skill-bars .bar .progress-line{
   height: 10px;
-  width: 100%;
-  transform: scaleX(0);
   transform-origin: left;
   border-radius: 20px;
   animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
@@ -362,21 +358,26 @@ font-size: 25px;
   background: white;
   animation: animate cubic-bezier(1,0,0.5,1) forwards;
 }
+/*Graphics*/
 .bar .progress-line.html span{
-  width: 90%;
-}
-.bar .progress-line.css span{
   width: 60%;
 }
-.bar .progress-line.jquery span{
-  width: 85%;
+.bar .progress-line.css span{
+  width: 50%;
+}
+.bar .progress-line.anaconda span{
+  width: 70%;
 }
 .bar .progress-line.python span{
   width: 50%;
 }
-.bar .progress-line.mysql span{
-  width: 75%;
+.bar .progress-line.sqlite span{
+  width: 40%;
 }
+.bar .progress-line.oop span{
+  width: 50%;
+}
+
 .progress-line span::after{
   position: absolute;
   top: -28px;
@@ -394,38 +395,43 @@ font-size: 25px;
     opacity: 1;
   }
 }
+/*Text graphics*/
 .progress-line.html span::after{
-  content: "90%";
-}
-.progress-line.css span::after{
   content: "60%";
 }
-.progress-line.jquery span::after{
-  content: "85%";
+.progress-line.css span::after{
+  content: "50%";
+}
+.progress-line.anaconda span::after{
+  content: "70%";
 }
 .progress-line.python span::after{
   content: "50%";
 }
-.progress-line.mysql span::after{
-  content: "75%";
+.progress-line.sqlite span::after{
+  content: "40%";
 }
+.progress-line.oop span::after{
+  content: "50%";
+}
+
 
 
 /*Contact*/
 /*Contact text*/
-.contact {
+.info-cont{
+padding: 70px;
+font-size:30px;
+margin:10px;
+line-height:60px;
+}
+.info-cont .fa{
 color:white;
-font-size:20px;
-line-height:30px;
-letter-spacing:5px;
-text-align:justify;
-margin: 20px;
-margin-bottom: 10vh;
+width: 50%;
+text-decoration: none;
+padding-top: 0;
+line-height: 2px;
 }
-.contact h1{
-height: 5vh;
-}
-
 
 /*Contact box*/
 #form {
