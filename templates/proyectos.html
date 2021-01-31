@@ -26,6 +26,16 @@ document.getElementById("mas1").style.display="inline";
 }
 }
 
+function vermas2(id){
+if(id=="mas2"){
+document.getElementById("desplegar2").style.display="block";
+document.getElementById("mas2").style.display="none";
+}
+else{
+document.getElementById("desplegar2").style.display="none";
+document.getElementById("mas2").style.display="inline";
+}
+}
 
 </script>
 
@@ -42,29 +52,29 @@ document.getElementById("mas1").style.display="inline";
 		<div class="card-image"><img src="static/css/siviso.png"></div>
 		<div class="card-info">
 			<h2 class="card-name">Transmisor FM con comunicación RDS.</h2>
-
+<br>
 			<p>Desarrollar e implementar a una sonoboya (combinación de sonar y boya)
 				un transmisor para que proporcione datos de su entorno y que mediante
 				ondas FM transmitirá esa información mediante RDS.
 				<br>
 				<br>
-				<a onclick="vermas('mas');" id="mas">Leer más...</a></p>
+				<a onclick="vermas('mas');" id="mas">—Leer más—</a></p>
 			<p id="desplegar" style="display:none;">
 				La problematica era que al desplegar la sonoboya
 				en el mar no se sabia con exactitud su ubicación, estado climático
 				o el estado de la batería.
 				<br>
 				<br>
-				Trabajos desarrollados
+				<b>Tareas desarrollados</b>
 				<br>
-				-Investigación de cada módulo que se implementa en el transmisor.<br>
-				-Desarrollar la programación.<br>
-				-Desarrollar las pruebas de los módulos y observar su implementación.<br>
-				-Desarrollar la simulación del ensamblaje del componente.<br>
-				-Diseñar el PCB donde todo los componentes del transmisor irán ensamblados.<br>
-				<a onclick="vermas('menos');" id="menos">Leer menos...</a></p>
+				•Investigación de cada módulo que se implementa en el transmisor.<br>
+				•Desarrollar la programación.<br>
+				•Desarrollar las pruebas de los módulos y observar su implementación.<br>
+				•Desarrollar la simulación del ensamblaje del componente.<br>
+				•Diseñar el PCB donde todo los componentes del transmisor irán ensamblados.<br>
+				<a onclick="vermas('menos');" id="menos">—Leer menos—</a></p>
 			<br>
-			<a href="static/css/ITVER RESIDENCIA.pdf" download="Residencias">DOCUMENTACIÓN</a>
+			<a href="static/css/ITVER RESIDENCIA.pdf" download="Residencias">«Documentación»</a>
 
 			<div class="card-footer">
 				<ul class="card-list">
@@ -76,38 +86,39 @@ document.getElementById("mas1").style.display="inline";
 				</ul>
 			</div>
 		</div>
-	</div><!--/.dino-card-->
-
+	</div>
 
 
    <div class="card">
       <div class="card-image"><img src="static/css/image1.jpeg"></div>
       <div class="card-info">
-         <h2 class="card-name">Mantenimiento y operación del laboratorio CIM</h2>
-
+         <h2 class="card-name">Mantenimiento y operación del laboratorio CIM.</h2>
+<br>
 	      <p>Mantenimiento y operación de la línea de producción, y accesorias a los estudiantes de la licenciatura
 		      en Ingeniería Industrial para desarrollar proyectos relacionados con su carrera.
 		      <br>
 		      <br>
-		      <a onclick="vermas1('mas1');" id="mas1">Leer más...</a></p>
+		      <a onclick="vermas1('mas1');" id="mas1">—Leer más—</a></p>
+
+
 	      <p id="desplegar1" style="display:none;">
 		      El trabajo estrablecido fue desarrollar una línea de producción de cualquier tipo de producto con la
 		      finalidad de aplicar
 		      la cuarta revolución industrial mejor conocida como “Industria 4.0”.
 		      <br>
 		      <br>
-		      Trabajos desarrollados
+		      <b>Tareas desarrollados</b>
 		      <br>
-		      -Investigación de temas relacionados a la carrea de Ingenería Insdustrial<br>
-		      -Mantenimiento preventivo a las distintas estaciones del laboratorio CIM.<br>
-		      -Diseñar las piezas para la implementación del módulo y del producto a desarrollar.<br>
-		      -Desarrollar las piezas para la implementación del módulo.<br>
-		      -Platicas de desmotración.<br>
-		      <a onclick="vermas1('menos1');" id="menos1">Leer menos...</a></p>
+		      •Investigación de temas relacionados a la carrea de Ingenería Insdustrial<br>
+		      •Mantenimiento preventivo a las distintas estaciones del laboratorio CIM.<br>
+		      •Diseñar las piezas para la implementación del módulo y del producto a desarrollar.<br>
+		      •Desarrollar las piezas para la implementación del módulo.<br>
+		      •Platicas de desmotración.<br>
+		      <a onclick="vermas1('menos1');" id="menos1">—Leer menos—</a></p>
 
 
 	      <br>
-			<a href="static/css/ITVER SER. SOC..pdf" download="Servicio Social">DOCUMENTACIÓN</a>
+			<a href="static/css/ITVER SER. SOC..pdf" download="Servicio Social">«Documentación»</a>
 
          <div class="card-footer">
 	         <ul class="card-list">
@@ -118,30 +129,39 @@ document.getElementById("mas1").style.display="inline";
 	         </ul>
          </div>
       </div>
-   </div><!--/.dino-card-->
+   </div>
 
 
-   <div class="card">
-      <div class="card-image"><img src=""></div>
-      <div class="card-info">
-         <h2 class="card-name"></h2>
+		<div class="card">
+			<div class="card-image"><img src="static/css/5.png"></div>
+			<div class="card-info">
+				<h2 class="card-name">CRUD en la pagina web (en dessarrollo).</h2>
+				<br>
+				<p>Con la finalidad de que la pagina web este mas completa; se quiere anexar un caja donde se pueda
+					escribir nombre, email y comentarios.
+					Con esto sera posible poder ver esta información toda en un CRUD (Create, Read, Update, Delete).
+					<br>
+					<br>
+					<a onclick="vermas2('mas2');" id="mas2">—Leer más—</a></p>
 
-         <p>
-            <a onclick="vermas('mas');" id="mas">Leer más...</a></p>
-         <p id="desplegar" style="display:none;">
+				<p id="desplegar2" style="display:none;">
+					En pocas palabras, CRUD resume funciones requeridas para crear y gestionar datos.
+					Todas estas herramientas se puede hacer en una base de datos pero desafortunadamente se han tenido
+					problemas con la comunicación de la pagina web con la base de datos.<br>
+					<a onclick="vermas2('menos2');" id="menos2">—Leer menos—</a>
 
-            <a onclick="vermas('menos');" id="menos">Leer menos...</a>
-         </p>
+				</p>
 
-         <div class="card-footer">
-            <ul class="card-list">
-               <li class="card-item"></li>
-               <li class="card-item"></li>
-            </ul>
-         </div>
-      </div>
-   </div><!--/.dino-card-->
+				<div class="card-footer">
+					<ul class="card-list">
+						<li class="card-item">HTML/CSS</li>
+						<li class="card-item">Base de datos</li>
+						<li class="card-item">Programación</li>
+					</ul>
+				</div>
+			</div>
+		</div>
 
 
-</div>
+	</div>
 {% endblock %}

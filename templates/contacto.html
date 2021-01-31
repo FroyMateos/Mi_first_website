@@ -8,26 +8,40 @@
 		<div class="small-spinner"></div>
 	</div>
 </div>
+<div class="caja1">
+	<div class="info-cont">
 
-<div class="info-cont">
-            <a style="cursor: default" class="fa fa-phone"> <p class="">22 93 73 36 63</p></a>
-			<br>
-            <a style="cursor: default" class="fa fa-google"><p>mateosfroylan@gmail.com</p></a>
-			<br>
-            <a style="cursor: default" class="fa fa-facebook"><p></p></a>
+		<p class="fa fa-google" style="cursor:default"></p>
+		<p class="dat"> mateosfroylan@gmail.com</p>
+		<br>
+		<p class="fa fa-phone" style="cursor:default"></p>
+		<p class="dat"> 22 93 73 36 63</p>
+		<br>
+		<p class="fa fa-map-marker" style="cursor:default"></p><a style="cursor:pointer" target="_blank"
+		                                                          href="https://www.google.com/maps/place/Cto.+Florida+Ote.+110,+Valente+D%C3%ADaz,+Ver./@19.1578294,-96.2044061,18.96z/data=!4m13!1m7!3m6!1s0x85c3414245ca78c5:0x18a4d642e936019b!2sVeracruz,+Ver.!3b1!8m2!3d19.173773!4d-96.1342241!3m4!1s0x85c343725f6ce33b:0x82b920b3636c35b5!8m2!3d19.1578473!4d-96.2041997"
+		                                                          class="dat-click"> Veracruz, Ver.</a>
+		<br>
+		<p class="fa fa-facebook" style="cursor:default"></p><a style="cursor:pointer" target="_blank"
+		                                                        href="https://www.facebook.com/froylan.mateos.7"
+		                                                        class="dat-click"> Froylan Mateos</a>
+		<br>
+		<p class="fa fa-user" style="cursor:default"></p><a style="cursor:pointer" class="dat-click"
+		                                                    href="static/css/CV Froy español.pdf"
+		                                                    download="CV Froy"> Curriculum</a>
+	</div>
+
 </div>
 
-<div class="contact">
+<!--
+<div class="caja2"><h1>SI DESEA SER CONTACTADO</h1>
+	<div class="contact">
 
-
-
-	<form id="form" class="topBefore">
-
-		<input id="name" type="text" placeholder="NOMBRE">
-		<input id="email" type="text" placeholder="E-MAIL">
-		<textarea id="message" type="text" placeholder="MENSAJE"></textarea>
-		<input id="submit" type="submit" value="ENVIAR">
-
-	</form>
-</div>
+		<form action="/create" method="POST"  id="form" class="topBefore">
+			<input type="text" id="name" name="name" placeholder="NOMBRE">
+			<input type="text"  id="email" name="email" placeholder="E-MAIL">
+			<textarea type="text"  id="message" name="message" placeholder="MENSAJE"></textarea>
+			<input id="submit" type="submit" value="ENVIAR">
+		</form>
+	</div>
+</div>-->
 {% endblock %}

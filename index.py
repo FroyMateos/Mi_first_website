@@ -18,6 +18,10 @@ def contacto():
 def web():
     return render_template('web.html')
 
+@app.route('/post')
+def post():
+    return render_template('post.html')
+
 if __name__=='__main__':
     app.run(debug=True) #Para modo prueba (no sera necesario cerrar el programa)
 
