@@ -433,7 +433,7 @@ font-family: "Barlow Condensed", sans-serif;
 }
 .caja1 {
 float:left;
-width:90%;
+width:40%;
 box-sizing: border-box;
 margin: 80px ;
 height: 450px;
@@ -488,7 +488,6 @@ font-family: Arial, Helvetica, sans-serif;
   background: black;
 }
 #submit {
-
   width: 470px;
   margin: -5px 0px 0px 0px;
 font-family: Arial, Helvetica, sans-serif;
